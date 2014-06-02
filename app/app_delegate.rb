@@ -8,6 +8,9 @@ class AppDelegate
     @blue_view.backgroundColor = UIColor.blueColor
     @window.addSubview(@blue_view)
 
+    @green_view = UIView.alloc.initWithFrame(CGRectMake(30, 30, 40, 40))
+    @green_view.backgroundColor = UIColor.greenColor
+    @window.addSubview(@green_view)
 
     true
   end
