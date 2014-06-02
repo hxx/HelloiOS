@@ -2,7 +2,7 @@ class TapController < UIViewController
   def viewDidLoad
     super
 
-    self.view.backgroundColor = UIColor.redColor
+    self.view.backgroundColor = UIColor.whiteColor
 
     @label = UILabel.alloc.initWithFrame(CGRectZero)
     @label.text = "Taps"
