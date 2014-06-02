@@ -11,5 +11,7 @@ class TapController < UIViewController
     self.view.addSubview @label
 
     self.title = "Tap"
+    right_button = UIBarButtonItem.alloc.initWithTitle("Push", style: UIBarButtonItemStyleBordered, target:self, action:'push')
+    self.navigationItem.rightBarButtonItem = right_button
   end
 end
