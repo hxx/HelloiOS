@@ -18,7 +18,7 @@ class AlphabetController < UIViewController
       UITableViewCell.alloc.initWithStyle(UITableViewCellStyleDefault, reuseIdentifier:@reuseIdentifier)
     end
 
-    # put your data in the cell
+    cell.textLabel.text = @data[indexPath.row]
 
     cell
 
