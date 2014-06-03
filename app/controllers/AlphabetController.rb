@@ -25,8 +25,7 @@ class AlphabetController < UIViewController
   end
 
   def tableView(tableView, numberOfRowsInSection: section)
-    # return the number of rows
-
+    @data.count
   end
 
 end
