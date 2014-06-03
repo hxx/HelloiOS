@@ -8,6 +8,7 @@ class AlphabetController < UIViewController
     self.view.addSubview @table
 
     @table.dataSource = self
+    @data = ("A".."Z").to_a
   end
 
   def tableView(tableView, cellForRowAtIndexPath: indexPath)
