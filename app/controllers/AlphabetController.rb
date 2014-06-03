@@ -29,4 +29,13 @@ class AlphabetController < UIViewController
     @data.count
   end
 
+  def tableView(tableView, didSelectRowAtIndexPath:indexPath)
+    tableView.deselectRowAtIndexPath(indexPath, animated: true)
+
+    alert = UIAlertView.alloc.init
+    alert.message = "#{@data[indexPath.row]} tapped!"
+    alert.addButtonWithTitle "OK"
+    alert.show
+  end
+
 end
